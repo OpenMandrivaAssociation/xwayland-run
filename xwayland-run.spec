@@ -8,7 +8,6 @@ URL:            https://gitlab.freedesktop.org/ofourdan/xwayland-run
 Source0:        https://gitlab.freedesktop.org/ofourdan/xwayland-run/-/archive/%{version}/%{name}-%{version}.tar.bz2
 
 # Upstream patch
-Patch0:      0001-wlheadless-Add-support-for-kwin.patch
 
 BuildArch:      noarch
 
