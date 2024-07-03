@@ -1,5 +1,5 @@
 Name:           xwayland-run
-Version:        0.0.3
+Version:        0.0.4
 Release:        1
 Summary:        Set of utilities to run headless X/Wayland clients
 Group:          System/X11/Wayland
@@ -14,8 +14,10 @@ BuildArch:      noarch
 BuildRequires:  git-core
 BuildRequires:  meson
 BuildRequires:  pkgconfig(python)
-Requires:       (weston or cage or kwin-wayland or mutter or gnome-kiosk)
+Requires:       (mutter or weston or cage or kwin-wayland or plasma6-kwin-wayland or gnome-kiosk)
 Requires:       xwayland
+Requires:       xauth
+Requires:       dbus-daemon
 
 # Other utilities merged inside this project
 Provides:       wlheadless-run = %{EVRD}
